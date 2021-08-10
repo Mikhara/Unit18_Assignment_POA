@@ -8,23 +8,27 @@ These instructions are a guide for the employees of **ZBank** to experiment with
 ## Creating and Sending crypto currency via MyCrypto Wallet (an already existing testnet)
 
 
-If you would like to quickly see how to send and receive crypto, we can use an existing testnet via MyCrypto to get our first test of sending and receiving crypto.
+* If you would like to quickly see how to send and receive crypto, we can use an existing testnet via MyCrypto to get our first test of sending and receiving crypto.
 
 
 	* Download MyCrypto (https://www.mycrypto.com/) and creat a new wallet on one of the Ethereum testnets (I picked Rinkeby).
-		* ![image](1.MyCryptoWalletcreated)
+
+![image](1.MyCryptoWalletcreated)
 	* To pre-load the wallet, go to (https://faucet.rinkeby.io/) and tweet request with your account address copied.
 	* Click on Transaction History on MyCrypto to see request status
-		* ![image](2.EthrequestedonRinkeby)
+
+![image](2.EthrequestedonRinkeby)
 	* Refresh Account Balance to see ETH come through
-		* ![image](3.EthloadedfromRinkebyinto wallet)
+
+![image](3.EthloadedfromRinkebyintowallet)
+
 	* Share your Account address with colleagues to receive ETH
 	* Paste your colleague's Account Address in "To" box in MyCrypto to send them ETH
 
 
 ## Creating **zbanknet** as a testnet to send/receive our own blockchain
 
-These are the steps I followed to create the Zbank testnet. Please note the following tools must be downloaded in order to create the testnet:
+* These are the steps I followed to create the Zbank testnet. Please note the following tools must be downloaded in order to create the testnet:
 	* [Go Ethereum](https://geth.ethereum.org/) 
 	* MyCrypto from above
 
@@ -47,11 +51,14 @@ These are the steps I followed to create the Zbank testnet. Please note the foll
 4. Now the nodes can be used to begin mining blocks
 	*  `./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock`
 It should look like this if successfully mining:
+
 ![image](4.node1)
 
     *  `./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 It should look like this if successfully mining:
+
 ![image](5.node2a)
+
 ![image](6.node2b)
 
 5. Add your zbank testnet to your MyCrypto as a custom network using the Chain ID you set for your testnet and use 'ETH' for currency.
@@ -59,6 +66,7 @@ It should look like this if successfully mining:
 6. You can now send crypto from Node 1 to Node 2 on your the private ZBank testnet. Simply enter the public address of Node 2 whilst in your Node 1 wallet, select the amount of ETH and Send.
 
 Node 1 Wallet looks like this:
+
 ![image](7.node1wallet)
 
 Transaction from Node 1 Wallet to Node 2 Wallet looks like this:
