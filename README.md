@@ -62,7 +62,7 @@ Node 1 Wallet looks like this:
 ![image](7.node1wallet)
 
 Transaction from Node 1 Wallet to Node 2 Wallet looks like this:
-![image](8. transaction from node1 to node2)
+![image](8.transactionfromnode1tonode2)
 
 **Transaction successful!**
-![image](9. transaction successful)
+![image](9.transactionsuccessful)
