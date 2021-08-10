@@ -8,19 +8,21 @@ These instructions are a guide for the employees of **ZBank** to experiment with
 ## Creating and Sending crypto currency via MyCrypto Wallet (an already existing testnet)
 
 
-* If you would like to quickly see how to send and receive crypto, we can use an existing testnet via MyCrypto to get our first test of sending and receiving crypto.
+If you would like to quickly see how to send and receive crypto, we can use an existing testnet via MyCrypto to get our first test of sending and receiving crypto.
 
 
 	* Download MyCrypto (https://www.mycrypto.com/) and creat a new wallet on one of the Ethereum testnets (I picked Rinkeby).
 
-![image](1.MyCryptoWalletcreated)
+![image](1.MyCryptoWalletcreated.png)
+
 	* To pre-load the wallet, go to (https://faucet.rinkeby.io/) and tweet request with your account address copied.
 	* Click on Transaction History on MyCrypto to see request status
 
-![image](2.EthrequestedonRinkeby)
+![image](2.EthrequestedonRinkeby.png)
+
 	* Refresh Account Balance to see ETH come through
 
-![image](3.EthloadedfromRinkebyintowallet)
+![image](3.EthloadedfromRinkebyintowallet.png)
 
 	* Share your Account address with colleagues to receive ETH
 	* Paste your colleague's Account Address in "To" box in MyCrypto to send them ETH
@@ -52,14 +54,14 @@ These instructions are a guide for the employees of **ZBank** to experiment with
 	*  `./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock`
 It should look like this if successfully mining:
 
-![image](4.node1)
+![image](4.node1.png)
 
     *  `./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 It should look like this if successfully mining:
 
-![image](5.node2a)
+![image](5.node2a.png)
 
-![image](6.node2b)
+![image](6.node2b.png)
 
 5. Add your zbank testnet to your MyCrypto as a custom network using the Chain ID you set for your testnet and use 'ETH' for currency.
 
@@ -67,10 +69,12 @@ It should look like this if successfully mining:
 
 Node 1 Wallet looks like this:
 
-![image](7.node1wallet)
+![image](7.node1wallet.png)
 
 Transaction from Node 1 Wallet to Node 2 Wallet looks like this:
-![image](8.transactionfromnode1tonode2)
+
+![image](8.transactionfromnode1tonode2.png)
 
 **Transaction successful!**
-![image](9.transactionsuccessful)
+
+![image](9.transactionsuccessful.png)
